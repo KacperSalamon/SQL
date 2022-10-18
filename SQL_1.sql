@@ -24,5 +24,21 @@
 
 13. INSERT INTO Suppliers("SupplierID", "SupplierName", "ContactName", "Address", "City", "PostalCode", "Country", "Phone") VALUES ("30", "Kacper Salamon", "Kacper Salamon", "Krowoderskich Zuchów 16/69", "Kraków", "31-272", "Poland", "65656565")
 
+14. UPDATE Suppliers SET CustomerName = "Test_name", City = "Test_city" WHERE SupplierID = 1
+
+15. UPDATE Suppliers SET SupplierID = 31 WHERE SupplierID = 2
+
+16. UPDATE Suppliers SET Country = "Jap." WHERE Country = "Japan"
+
+17. DELETE FROM Suppliers WHERE SupplierID BETWEEN 2 AND 6
+
+18. DELETE FROM Suppliers WHERE Country = "Russia"
+
+19. DELETE FROM Suppliers WHERE PostalCode > 12300
+
+20. UPDATE Suppliers SET Phone = NULL WHERE PostalCode LIKE "%5%"
+
+21. SELECT * FROM Suppliers WHERE Phone IS NULL
+
 
 
