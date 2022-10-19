@@ -40,5 +40,21 @@
 
 21. SELECT * FROM Suppliers WHERE Phone IS NULL
 
+22. SELECT TOP 5 FROM Suppliers 
 
+23. SELECT TOP 25 PERCENT * FROM Suppliers
+
+24. SELECT CustomerName, City, Country FROM Suppliers WHERE SupplierID BETWEEN 10 AND 20 LIMIT 2
+
+25. SELECT AVG(Price) FROM Products 
+
+26. SELECT SUM(PRICE) FROM Products WHERE CategpryID > 4
+
+27. SELECT COUNT(ProductName) FROM Products
+
+28. SELECT MIN(Price) FROM Products WHERE Unit LIKE "%200%"
+
+29. SELECT MIN(CategpryID) WHERE Price LIKE "%.%"
+
+30. SELECT MAX(Price) FROM Products
 
