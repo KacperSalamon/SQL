@@ -58,3 +58,16 @@
 
 30. SELECT MAX(Price) FROM Products
 
+31. SELECT Adress + ", " + City + ", " + Country AS FullAdress FROM Suppliers
+
+32. SELECT DISTINCT S.SupplierName, S.ContactName, C.CustomerName, C.City FROM Suppliers AS S, Customers AS C WHERE C.CustomerID = S.SupplierID
+
+33. SELECT DISTINCT C.CustomerName, O.OrderID FROM Customers AS C, Orders AS 
+
+34. SELECT S.SupplierName, C.CustomerName, C.City FROM Suppliers AS S INNER JOIN Customers AS C ON C.CustomerID = S.SupplierID
+
+35. SELECT OrderDetails.OrderDetailsID, Products.ProductID, Products.ProductsName FROM OrderDetails INNER JOIN Products ON Products.Price > 30
+
+36. SELECT Orders.OrderID, Customers.CustomerName FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+
+37. SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID ORDER BY Customers.CustomerName
