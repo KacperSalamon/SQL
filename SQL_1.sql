@@ -71,3 +71,16 @@
 36. SELECT Orders.OrderID, Customers.CustomerName FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 
 37. SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID ORDER BY Customers.CustomerName
+
+38. SELECT Country FROM Customers
+UNION ALL 
+SELECT City FROM Suppliers
+
+39. SELECT County FROM Customers
+UNION 
+SELECT City FROM Suppliers 
+
+-- Maybe above SELECT command look similar but the MAIN diffrence is that the second command only chose non-reapet things
+-- This is similiar to DISTINCT :)
+
+40. SELECT  Customers.Country, Customers.City, Customers.Adress, Suppliers.SupplierID FROM Customers, Suppliers GROUP BY SupplierID HAVING SupplierID > 5
